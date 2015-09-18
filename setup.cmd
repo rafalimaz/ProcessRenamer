@@ -13,6 +13,7 @@ echo oLink.Arguments = "/c """"%USERPROFILE%\Desktop\ProcessRenamer\ProcessRenam
 echo oLink.Save >> %SCRIPT%
 
 cscript /nologo %SCRIPT%
-cscript /nologo %PINTASKBAR%
+cscript /nologo %PINTASKBAR% /target:"ProcessRenamer.lnk" /folder:"C:\Users\ufc113.lima\Desktop\ProcessRenamer"
+cscript /nologo %PINTASKBAR% /target:"chrome.exe" /folder:"%chromePath%"
 
 del %SCRIPT%

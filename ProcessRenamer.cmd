@@ -4,11 +4,9 @@
 @echo off 
 
 SETLOCAL ENABLEDELAYEDEXPANSION
-
 SET me=%~n0
 SET parent=%~dp0
 
-:: BatchGotAdmin
 :-------------------------------------
 REM  --> Check for permissions
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
@@ -46,12 +44,13 @@ if '%errorlevel%' NEQ '0' (
 		
 		TASKKILL /F /IM !name!
 		SET newProcessName=chrome%random%1.exe
-		::SET newProcessName=chrome9.exe
 		ren "%%f" !newProcessName!
-		Start "title" "%chromePath%\!newProcessName!"
+		
+		cscript /nologo mkshortcut.vbs /target:"%chromePath%\!newProcessName!" /shortcut:"%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Google Chrome"
+		::Start "" /wait /b "%chromePath%\!newProcessName!"
+		::runas "/trustlevel:0x20000" "%chromePath%\!newProcessName!" //TODO: make start from command for basic user
 		exit /B
-	)
-	
+	)	
 :--------------------------------------
 
 

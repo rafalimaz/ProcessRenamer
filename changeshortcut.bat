@@ -1,0 +1,1 @@
+cscript /nologo mkshortcut.vbs /target:"C:\Program Files (x86)\Skype\Phone\Skype3" /shortcut:"%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Skype"

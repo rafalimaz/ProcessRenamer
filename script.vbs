@@ -1,8 +1,8 @@
 Dim strFolder, strExecutable
 Set objShell = CreateObject("Shell.Application")
 
-strFolder = "C:\Users\ufc113.lima\Desktop\ProcessRenamer"
-strExecutable = "ProcessRenamer.lnk"
+strFolder = Wscript.Arguments.Named("folder")
+strExecutable = Wscript.Arguments.Named("target")
 
 Set objFolder = objShell.Namespace(strFolder)
 Set objFolderItem = objFolder.ParseName(strExecutable)
