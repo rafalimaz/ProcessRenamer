@@ -3,13 +3,11 @@ A Process Renamer Tool
 
 
 ### How to Run (first version only works with Google Chrome)
-1. Unpack it on the Desktop
-2. Rename the folder to "Process Renamer"
-3. Open the setup.cmd file with notepad.
-4. Change the parameter "/folder" putting the path of ProcessRenamer
-5. Go to the Chrome folder and creates a copy of the executable. Renames to chrome1.exe
-6. Runs the setup.cmd
-7. Place the path of Chrome folder in the input.
-8. Runs the shortcut that appears on the taskbar.
-9. Click Yes.
-10. Opens the Chrome shortcut on the taskbar.
+1. Unpack folder anywhere on your machine
+2. Run the setup.cmd file
+3. Put the path of Chrome folder when asked.
+4. Click on the Process Renamer command shortcut that appears on the Taskbar.
+5. Click on Yes when prompting User Access Control.
+6. Click on the Chrome shortcut on the Taskbar.
+
+Every time you want rename process, you must click repeat from step 4.

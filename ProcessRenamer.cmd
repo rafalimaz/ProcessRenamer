@@ -36,6 +36,11 @@ if '%errorlevel%' NEQ '0' (
 	
 :mainFunction
 	FOR /F "delims=" %%I IN (%1) DO SET chromePath=%%I
+	
+	if not exist "%chromePath%\chrome*1.exe" (
+		copy "%chromePath%\chrome.exe" "%chromePath%\chrome1.exe"
+	)
+	
 	FOR /R "%chromePath%" %%f IN (*1.exe) DO (
 		For %%A in ("%%f") do (
 			Set folder=%%~dpA
