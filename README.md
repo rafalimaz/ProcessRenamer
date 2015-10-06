@@ -3,7 +3,7 @@ A Process Renamer Tool
 
 
 ### How to Run (first version only works with Google Chrome)
-1. Unpack folder anywhere on your machine
+1. Unpack Process Renamer [folder](https://github.com/rafalimaz/ProcessRenamer/archive/master.zip) anywhere on your machine
 2. Run the setup.cmd file
 3. Put the path of Chrome folder when asked.
 4. Click on the Process Renamer command shortcut that appears on the Taskbar.
