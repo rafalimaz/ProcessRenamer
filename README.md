@@ -10,4 +10,4 @@ A Process Renamer Tool
 5. Click on Yes when prompting User Access Control.
 6. Click on the Chrome shortcut on the Taskbar.
 
-Every time you want rename process, you must click repeat from step 4.
+Every time you want rename process, you must repeat from step 4.
