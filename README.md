@@ -11,3 +11,9 @@ A Process Renamer Tool
 6. Click on the Chrome shortcut on the Taskbar.
 
 Every time you want rename process, you must repeat from step 4.
+
+### Troubleshooting
+1. After click on the Process Renamer shortcut on Taskbar, system is starting the chrome.exe process instead of a renamed chrome***1.exe
+  - Delete all chrome process via Windows Process Manager.
+  - Go into chrome application folder and start the renamed process (chrome***1.exe)
+  - Click on the Process Renamer shortcut
